@@ -27,3 +27,6 @@
 .final-guarantee{display:block;margin-top:13px;color:var(--muted);font-size:13px}
 
 @media(max-width:560px){.mid-quote{padding-top:0;padding-bottom:72px}.mid-quote blockquote{font-size:20px}.final-actions{flex-direction:column}.final-actions .button{width:100%;min-width:0}}
+
+body{background:radial-gradient(circle at 18% -8%,#8b5cf64a 0,transparent 31rem),radial-gradient(circle at 82% -4%,#ec48992b 0,transparent 29rem),radial-gradient(circle at 50% 13%,#3bd8ff16 0,transparent 35rem),var(--bg)}
+.hero-actions .button{padding:15px 27px;font-size:16px}

@@ -13,21 +13,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://viora-new-tab.senujalinal.chatgpt.site'),
+  metadataBase: new URL('https://veyra-new-tab.senujalinal.chatgpt.site'),
   title: {
-    default: 'Viora — Your new tab, beautifully focused',
-    template: '%s · Viora',
+    default: 'Veyra — Your new tab, beautifully focused',
+    template: '%s · Veyra',
   },
   description: 'A beautiful new-tab workspace for bookmarks, widgets, wallpapers and focus.',
   openGraph: {
-    title: 'Viora — Your new tab, beautifully focused',
+    title: 'Veyra — Your new tab, beautifully focused',
     description: 'Bookmarks, widgets and focus — together.',
     type: 'website',
-    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Viora — Your new tab, beautifully focused' }],
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Veyra — Your new tab, beautifully focused' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Viora — Your new tab, beautifully focused',
+    title: 'Veyra — Your new tab, beautifully focused',
     description: 'Bookmarks, widgets and focus — together.',
     images: ['/og.png'],
   },

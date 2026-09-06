@@ -12,13 +12,13 @@ const features = [
 ];
 
 const faqs = [
-  ['What happens to my current bookmarks?', 'Nothing is removed. Viora works alongside your browser bookmarks, and you can import them into visual boards whenever you are ready.'],
+  ['What happens to my current bookmarks?', 'Nothing is removed. Veyra works alongside your browser bookmarks, and you can import them into visual boards whenever you are ready.'],
   ['Is this a subscription?', 'No. Both options are one-time purchases. The one-year pass never renews automatically, while the lifetime plan is yours for good.'],
-  ['Which browsers are supported?', 'Viora works on desktop versions of Chrome, Edge, Brave, Opera and other Chromium-based browsers.'],
+  ['Which browsers are supported?', 'Veyra works on desktop versions of Chrome, Edge, Brave, Opera and other Chromium-based browsers.'],
   ['Can I use it on more than one computer?', 'Yes. Sign in with the same account and your boards stay in sync across your computers.'],
-  ['Is my information private?', 'Your workspace is yours. Viora does not sell personal information and does not use your bookmarks for advertising. See the Privacy Policy for full details.'],
-  ['Will it slow down my browser?', 'Viora is designed to stay lightweight. It loads when you open a new tab and avoids unnecessary background work.'],
-  ['How do I install after buying?', 'Your receipt includes an install link and activation instructions. Install Viora, open a new tab, and follow the short setup flow.'],
+  ['Is my information private?', 'Your workspace is yours. Veyra does not sell personal information and does not use your bookmarks for advertising. See the Privacy Policy for full details.'],
+  ['Will it slow down my browser?', 'Veyra is designed to stay lightweight. It loads when you open a new tab and avoids unnecessary background work.'],
+  ['How do I install after buying?', 'Your receipt includes an install link and activation instructions. Install Veyra, open a new tab, and follow the short setup flow.'],
   ['What if it is not for me?', 'You can request a refund within seven days of purchase, subject to the simple terms in our Refund Policy.'],
 ];
 
@@ -32,30 +32,40 @@ export default function Home() {
   return (
     <main>
       <nav className="nav shell" aria-label="Main navigation">
-        <a className="brand" href="#top" aria-label="Viora home"><NextImage src="/viora-logo.png" width={38} height={38} alt="" /><span>Viora</span></a>
+        <a className="brand" href="#top" aria-label="Veyra home"><NextImage src="/veyra-logo.png" width={38} height={38} alt="" /><span>Veyra</span></a>
         <div className="nav-links"><a href="#features">Features</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div>
-        <a className="button button-small" href="#pricing">Get Viora</a>
+        <a className="button button-small" href="#pricing">Get Veyra</a>
       </nav>
 
       <section className="hero shell" id="top">
         <div className="eyebrow"><span className="status-dot" /> Browser extension</div>
         <h1>Your new tab,<br /><span>beautifully focused.</span></h1>
         <p className="hero-copy">Bring your bookmarks, tools, notes and daily focus into one calm, personal workspace—ready every time you open a tab.</p>
-        <div className="hero-actions"><a className="button" href="#pricing">Get Viora <ArrowRight size={17} /></a><a className="text-link" href="#features">See what’s inside</a></div>
-        <div className="social-proof"><div className="avatars" aria-hidden="true"><span>AJ</span><span>ML</span><span>SK</span><span>+</span></div><p><strong>800+ people</strong> already use Viora</p></div>
+        <div className="hero-actions"><a className="button" href="#pricing">Get Veyra <ArrowRight size={17} /></a><a className="text-link" href="#features">See what’s inside</a></div>
+        <div className="social-proof"><div className="avatars" aria-hidden="true"><span>AJ</span><span>ML</span><span>SK</span><span>+</span></div><p><strong>800+ people</strong> already use Veyra</p></div>
         <div className="product-frame">
-          <div className="window-bar"><i /><i /><i /><span>New Tab — Viora</span></div>
-          <NextImage src="/viora-workspace.png" width={2538} height={1274} priority alt="Viora new-tab workspace with bookmarks, widgets, and a wallpaper" />
+          <div className="window-bar"><i /><i /><i /><span>New Tab — Veyra</span></div>
+          <NextImage src="/veyra-workspace.png" width={2538} height={1159} priority alt="Veyra new-tab workspace with bookmarks, widgets, and a wallpaper" />
           <div className="floating-note"><Check size={15} /> Everything you need, one tab away</div>
         </div>
-        <div className="browser-row"><span>Works with</span><b>Chrome</b><b>Edge</b><b>Brave</b><b>Opera</b><b>+ more</b></div>
+        <div className="browser-row" aria-label="Veyra works with Chrome, Yandex Browser, Microsoft Edge, Opera, Brave and more Chromium browsers">
+          <span>Works with</span>
+          <div className="browser-icons">
+            <NextImage src="/browsers/chrome.png" width={38} height={38} alt="Google Chrome" title="Google Chrome" />
+            <NextImage src="/browsers/yandex.png" width={38} height={38} alt="Yandex Browser" title="Yandex Browser" />
+            <NextImage src="/browsers/microsoft.png" width={38} height={38} alt="Microsoft Edge" title="Microsoft Edge" />
+            <NextImage src="/browsers/opera.png" width={38} height={38} alt="Opera" title="Opera" />
+            <NextImage src="/browsers/brave.png" width={38} height={38} alt="Brave" title="Brave" />
+          </div>
+          <b>+ more</b>
+        </div>
       </section>
 
       <section className="section shell" id="features">
-        <div className="section-head"><div className="eyebrow">Why Viora</div><h2>Your browser opens a new tab.<br />Viora opens your day.</h2><p>Stop treating bookmarks like a filing cabinet. Put the things you care about on the page you already see all day.</p></div>
+        <div className="section-head"><div className="eyebrow">Why Veyra</div><h2>Your browser opens a new tab.<br />Veyra opens your day.</h2><p>Stop treating bookmarks like a filing cabinet. Put the things you care about on the page you already see all day.</p></div>
         <div className="compare-grid">
           <article className="compare-card dim"><p className="card-kicker">A normal new tab</p><ul><li><span>×</span>A blank page or someone else’s shortcuts</li><li><span>×</span>Too many tabs open “for later”</li><li><span>×</span>Bookmarks buried inside folders</li><li><span>×</span>Useful tools scattered across apps</li></ul></article>
-          <article className="compare-card bright"><p className="card-kicker">Your new tab with Viora</p><ul><li><Check />Everything saved where you can see it</li><li><Check />One shortcut to save, then close the tab</li><li><Check />Visual boards that stay memorable</li><li><Check />Widgets and focus tools in one place</li></ul></article>
+          <article className="compare-card bright"><p className="card-kicker">Your new tab with Veyra</p><ul><li><Check />Everything saved where you can see it</li><li><Check />One shortcut to save, then close the tab</li><li><Check />Visual boards that stay memorable</li><li><Check />Widgets and focus tools in one place</li></ul></article>
         </div>
 
         <div className="section-head feature-heading"><div className="eyebrow">Features</div><h2>Everything you need.<br />Nothing you don’t.</h2></div>
@@ -75,8 +85,8 @@ export default function Home() {
       <section className="section shell" id="pricing">
         <div className="section-head"><div className="eyebrow">Pricing</div><h2>Upgrade your everyday browsing.</h2><p className="offer">Launch offer · 50% off</p></div>
         <div className="pricing-grid">
-          <article className="price-card"><p className="card-kicker">1-Year Pass</p><div className="price"><s>$18</s><strong>$9</strong><span>/ year</span></div><small>ONE-TIME PAYMENT · NO AUTO-RENEWAL</small><ul><li><Check />Full access for 12 months</li><li><Check />Unlimited boards and pages</li><li><Check />All widgets, wallpapers and updates</li><li><Check />Use on all your computers</li><li><Check />Friendly support included</li></ul><a className="button secondary-button" href="#checkout-note">Get one year for $9</a><p className="guarantee">7-day money-back guarantee</p></article>
-          <article className="price-card featured"><span className="best">Best value</span><p className="card-kicker">Lifetime Access</p><div className="price"><s>$50</s><strong>$25</strong></div><small>ONE-TIME PAYMENT · YOURS FOREVER</small><ul><li><Check />Lifetime access, pay once</li><li><Check />Unlimited boards and pages</li><li><Check />All widgets, wallpapers and updates</li><li><Check />Use on all your computers</li><li><Check />Priority support included</li></ul><a className="button" href="#checkout-note">Get lifetime for $25</a><p className="guarantee">7-day money-back guarantee</p></article>
+          <article className="price-card"><p className="card-kicker">1-Year Pass</p><div className="price"><s>$25.60</s><strong>$12.80</strong><span>/ year</span></div><small>ONE-TIME PAYMENT · NO AUTO-RENEWAL</small><ul><li><Check />Full access for 12 months</li><li><Check />Unlimited boards and pages</li><li><Check />All widgets, wallpapers and updates</li><li><Check />Use on all your computers</li><li><Check />Friendly support included</li></ul><a className="button secondary-button" href="#checkout-note">Get one year for $12.80</a><p className="guarantee">7-day money-back guarantee</p></article>
+          <article className="price-card featured"><span className="best">Best value</span><p className="card-kicker">Lifetime Access</p><div className="price"><s>$45.60</s><strong>$22.80</strong></div><small>ONE-TIME PAYMENT · YOURS FOREVER</small><ul><li><Check />Lifetime access, pay once</li><li><Check />Unlimited boards and pages</li><li><Check />All widgets, wallpapers and updates</li><li><Check />Use on all your computers</li><li><Check />Priority support included</li></ul><a className="button" href="#checkout-note">Get lifetime for $22.80</a><p className="guarantee">7-day money-back guarantee</p></article>
         </div>
         <p id="checkout-note" className="checkout-note"><Sparkles size={17} /> Checkout links are ready to connect to your payment provider.</p>
       </section>
@@ -88,7 +98,7 @@ export default function Home() {
 
       <section className="final-cta"><div className="orb orb-one" /><div className="orb orb-two" /><div className="shell"><Bookmark size={28} /><h2>Make every new tab<br />a place worth opening.</h2><p>One purchase. A calmer, more personal browser every day.</p><a className="button" href="#pricing">Choose your plan <ArrowRight size={17} /></a></div></section>
 
-      <footer><div className="shell footer-grid"><div><a className="brand" href="#top"><NextImage src="/viora-logo.png" width={38} height={38} alt="" /><span>Viora</span></a><p>Your new tab, beautifully focused.</p></div><div><h3>Product</h3><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div><div><h3>Legal</h3><Link href="/privacy">Privacy Policy</Link><Link href="/terms">Terms of Service</Link><Link href="/cookies">Cookie Policy</Link><Link href="/refunds">Refund Policy</Link></div><div><h3>Help</h3><Link href="/support">Support</Link><Link href="/license">License</Link></div></div><div className="shell footer-bottom"><span>© 2026 Viora. All rights reserved.</span><span>Made for calmer browsing.</span></div></footer>
+      <footer><div className="shell footer-grid"><div><a className="brand" href="#top"><NextImage src="/veyra-logo.png" width={38} height={38} alt="" /><span>Veyra</span></a><p>Your new tab, beautifully focused.</p></div><div><h3>Product</h3><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div><div><h3>Legal</h3><Link href="/privacy">Privacy Policy</Link><Link href="/terms">Terms of Service</Link><Link href="/cookies">Cookie Policy</Link><Link href="/refunds">Refund Policy</Link></div><div><h3>Help</h3><Link href="/support">Support</Link><Link href="/license">License</Link><a href="mailto:veyrasoft@gmail.com">veyrasoft@gmail.com</a></div></div><div className="shell footer-bottom"><span>© 2026 Veyra. All rights reserved.</span><span>Made for calmer browsing.</span></div></footer>
     </main>
   );
 }

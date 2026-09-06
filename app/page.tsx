@@ -1,6 +1,7 @@
 import { ArrowRight, Bookmark, Check, ChevronRight, Cloud, Download, Grid2X2, Image, Search, Sparkles, Zap } from 'lucide-react';
 import NextImage from 'next/image';
 import Link from 'next/link';
+import { ProductSlideshow } from '@/components/product-slideshow';
 
 const features = [
   { icon: Grid2X2, title: 'Visual boards', text: 'Keep bookmarks, links and ideas in clean boards you can arrange your way.' },
@@ -43,11 +44,7 @@ export default function Home() {
         <p className="hero-copy">Bring your bookmarks, tools, notes and daily focus into one calm, personal workspace—ready every time you open a tab.</p>
         <div className="hero-actions"><a className="button" href="#pricing">Get Veyra <ArrowRight size={17} /></a><a className="text-link" href="#features">See what’s inside</a></div>
         <div className="social-proof"><div className="avatars" aria-hidden="true"><span>AJ</span><span>ML</span><span>SK</span><span>+</span></div><p><strong>800+ people</strong> already use Veyra</p></div>
-        <div className="product-frame">
-          <div className="window-bar"><i /><i /><i /><span>New Tab — Veyra</span></div>
-          <NextImage src="/veyra-workspace.png" width={2538} height={1159} priority alt="Veyra new-tab workspace with bookmarks, widgets, and a wallpaper" />
-          <div className="floating-note"><Check size={15} /> Everything you need, one tab away</div>
-        </div>
+        <ProductSlideshow />
         <div className="browser-row" aria-label="Veyra works with Chrome, Yandex Browser, Microsoft Edge, Opera, Brave and more Chromium browsers">
           <span>Works with</span>
           <div className="browser-icons">
@@ -98,7 +95,7 @@ export default function Home() {
 
       <section className="final-cta"><div className="orb orb-one" /><div className="orb orb-two" /><div className="shell"><Bookmark size={28} /><h2>Make every new tab<br />a place worth opening.</h2><p>One purchase. A calmer, more personal browser every day.</p><a className="button" href="#pricing">Choose your plan <ArrowRight size={17} /></a></div></section>
 
-      <footer><div className="shell footer-grid"><div><a className="brand" href="#top"><NextImage src="/veyra-logo.png" width={38} height={38} alt="" /><span>Veyra</span></a><p>Your new tab, beautifully focused.</p></div><div><h3>Product</h3><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div><div><h3>Legal</h3><Link href="/privacy">Privacy Policy</Link><Link href="/terms">Terms of Service</Link><Link href="/cookies">Cookie Policy</Link><Link href="/refunds">Refund Policy</Link></div><div><h3>Help</h3><Link href="/support">Support</Link><Link href="/license">License</Link><a href="mailto:veyrasoft@gmail.com">veyrasoft@gmail.com</a></div></div><div className="shell footer-bottom"><span>© 2026 Veyra. All rights reserved.</span><span>Made for calmer browsing.</span></div></footer>
+      <footer><div className="shell footer-inline"><span>© 2026 Veyrasoft. All rights reserved.</span><div className="footer-links"><Link href="/privacy">Privacy Policy</Link><Link href="/terms">Terms of Service</Link><Link href="/cookies">Cookies</Link><Link href="/refunds">Refunds</Link><Link href="/license">Licence</Link><Link href="/support">Support</Link><a href="mailto:veyrasoft@gmail.com">veyrasoft@gmail.com</a></div></div></footer>
     </main>
   );
 }

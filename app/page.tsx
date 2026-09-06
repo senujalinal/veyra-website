@@ -1,4 +1,4 @@
-import { ArrowRight, Bookmark, Check, ChevronRight, Cloud, Download, Grid2X2, Image, Search, Sparkles, Zap } from 'lucide-react';
+import { ArrowRight, Bookmark, Check, ChevronRight, Cloud, Download, Grid2X2, Image, Search, Zap } from 'lucide-react';
 import NextImage from 'next/image';
 import Link from 'next/link';
 import { ProductSlideshow } from '@/components/product-slideshow';
@@ -82,18 +82,23 @@ export default function Home() {
       <section className="section shell" id="pricing">
         <div className="section-head"><div className="eyebrow">Pricing</div><h2>Upgrade your everyday browsing.</h2><p className="offer">Launch offer · 50% off</p></div>
         <div className="pricing-grid">
-          <article className="price-card"><p className="card-kicker">1-Year Pass</p><div className="price"><s>$25.60</s><strong>$12.80</strong><span>/ year</span></div><small>ONE-TIME PAYMENT · NO AUTO-RENEWAL</small><ul><li><Check />Full access for 12 months</li><li><Check />Unlimited boards and pages</li><li><Check />All widgets, wallpapers and updates</li><li><Check />Use on all your computers</li><li><Check />Friendly support included</li></ul><a className="button secondary-button" href="#checkout-note">Get one year for $12.80</a><p className="guarantee">7-day money-back guarantee</p></article>
-          <article className="price-card featured"><span className="best">Best value</span><p className="card-kicker">Lifetime Access</p><div className="price"><s>$45.60</s><strong>$22.80</strong></div><small>ONE-TIME PAYMENT · YOURS FOREVER</small><ul><li><Check />Lifetime access, pay once</li><li><Check />Unlimited boards and pages</li><li><Check />All widgets, wallpapers and updates</li><li><Check />Use on all your computers</li><li><Check />Priority support included</li></ul><a className="button" href="#checkout-note">Get lifetime for $22.80</a><p className="guarantee">7-day money-back guarantee</p></article>
+          <article className="price-card"><p className="card-kicker">1-Year Pass</p><div className="price"><s>$25.60</s><strong>$12.80</strong><span>/ year</span></div><small>ONE-TIME PAYMENT · NO AUTO-RENEWAL</small><ul><li><Check /><span><strong>Full access</strong> for 12 months</span></li><li><Check /><span><strong>Unlimited</strong> boards and pages</span></li><li><Check /><span>All widgets, wallpapers and updates</span></li><li><Check /><span>Use on all your computers</span></li><li><Check /><span>Friendly support included</span></li></ul><a className="button secondary-button" href="mailto:veyrasoft@gmail.com?subject=Veyra%201-Year%20Pass">Get one year for $12.80</a><p className="guarantee">7-day money-back guarantee</p></article>
+          <article className="price-card featured"><span className="best">Best value</span><p className="card-kicker">Lifetime Access</p><div className="price"><s>$45.60</s><strong>$22.80</strong></div><small>ONE-TIME PAYMENT · YOURS FOREVER</small><ul><li><Check /><span><strong>Lifetime access</strong> · pay once</span></li><li><Check /><span><strong>Unlimited</strong> boards and pages</span></li><li><Check /><span>All widgets, wallpapers and updates</span></li><li><Check /><span>Use on all your computers</span></li><li><Check /><span>Priority support included</span></li></ul><a className="button" href="mailto:veyrasoft@gmail.com?subject=Veyra%20Lifetime%20Access">Get lifetime for $22.80</a><p className="guarantee">7-day money-back guarantee</p></article>
         </div>
-        <p id="checkout-note" className="checkout-note"><Sparkles size={17} /> Checkout links are ready to connect to your payment provider.</p>
       </section>
+
+      <figure className="mid-quote shell">
+        <div className="quote-mark" aria-hidden="true">“</div>
+        <blockquote>After a week with Veyra, going back to a plain new tab wasn’t an option anymore.</blockquote>
+        <figcaption>Matt S.</figcaption>
+      </figure>
 
       <section className="section shell faq-section" id="faq">
         <div className="section-head"><div className="eyebrow">FAQ</div><h2>Questions, answered.</h2></div>
         <div className="faq-list">{faqs.map(([question, answer]) => <details key={question}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div>
       </section>
 
-      <section className="final-cta"><div className="orb orb-one" /><div className="orb orb-two" /><div className="shell"><Bookmark size={28} /><h2>Make every new tab<br />a place worth opening.</h2><p>One purchase. A calmer, more personal browser every day.</p><a className="button" href="#pricing">Choose your plan <ArrowRight size={17} /></a></div></section>
+      <section className="final-cta"><div className="orb orb-one" /><div className="orb orb-two" /><div className="shell"><Bookmark size={28} /><h2>Turn your new tab<br />into a workspace.</h2><p>Buy once and get instant access. Keep it for a year at $12.80, or forever for a one-time $22.80.</p><div className="final-actions"><a className="button" href="mailto:veyrasoft@gmail.com?subject=Veyra%20Lifetime%20Access">Get lifetime for $22.80</a><a className="button secondary-button" href="mailto:veyrasoft@gmail.com?subject=Veyra%201-Year%20Pass">Get 1 year for $12.80</a></div><span className="final-guarantee">7-day money-back guarantee</span></div></section>
 
       <footer><div className="shell footer-inline"><span>© 2026 Veyrasoft. All rights reserved.</span><div className="footer-links"><Link href="/privacy">Privacy Policy</Link><Link href="/terms">Terms of Service</Link><Link href="/cookies">Cookies</Link><Link href="/refunds">Refunds</Link><Link href="/license">Licence</Link><Link href="/support">Support</Link><a href="mailto:veyrasoft@gmail.com">veyrasoft@gmail.com</a></div></div></footer>
     </main>

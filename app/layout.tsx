@@ -9,7 +9,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://senujalinal.github.io/veyra-website'),
+  metadataBase: new URL('https://veyrasoft.store'),
   title: {
     default: 'Veyra — Your new tab, beautifully focused',
     template: '%s · Veyra',

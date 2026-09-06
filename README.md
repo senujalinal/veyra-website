@@ -2,7 +2,7 @@
 
 The marketing and legal website for Veyra, a customizable browser new-tab workspace.
 
-Live site: https://senujalinal.github.io/veyra-website/
+Live site: https://veyrasoft.store/
 
 ## Included
 

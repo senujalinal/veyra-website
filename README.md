@@ -18,4 +18,4 @@ npm install
 npm run dev
 ```
 
-Before launch, replace `https://viora.example`, connect the pricing buttons to the real checkout URLs, and add the legal business name, address, support email, payment provider and jurisdiction to the policy pages.
+Before accepting payments, connect the pricing buttons to the real checkout URLs and add the legal business name, address, support email, payment provider and jurisdiction to the policy pages.

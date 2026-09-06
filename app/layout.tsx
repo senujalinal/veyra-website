@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://viora.example'),
+  metadataBase: new URL('https://viora-new-tab.senujalinal.chatgpt.site'),
   title: {
     default: 'Viora — Your new tab, beautifully focused',
     template: '%s · Viora',

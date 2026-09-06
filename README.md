@@ -2,12 +2,15 @@
 
 The marketing and legal website for Veyra, a customizable browser new-tab workspace.
 
+Live site: https://senujalinal.github.io/veyra-website/
+
 ## Included
 
 - Responsive landing page with product showcase, feature comparison, reviews, pricing and FAQ
 - Privacy, terms, cookie, refund, licence and support pages
 - Search and social metadata
 - GitHub Actions checks for every pull request and main-branch update
+- Automatic GitHub Pages deployment after every successful main-branch update
 
 ## Managing the slideshow
 

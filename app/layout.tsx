@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Plus_Jakarta_Sans } from 'next/font/google';
+import { assetPath } from '@/lib/asset-path';
 import './globals.css';
 
 const jakarta = Plus_Jakarta_Sans({
@@ -8,7 +9,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://veyra-new-tab.senujalinal.chatgpt.site'),
+  metadataBase: new URL('https://senujalinal.github.io/veyra-website'),
   title: {
     default: 'Veyra — Your new tab, beautifully focused',
     template: '%s · Veyra',
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
     description: 'Bookmarks, widgets and focus — together.',
     images: ['/og.png'],
   },
-  icons: { icon: '/favicon.png' },
+  icons: { icon: assetPath('/favicon.png') },
 };
 
 export default function RootLayout({

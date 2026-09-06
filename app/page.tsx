@@ -2,6 +2,7 @@ import { ArrowRight, Bookmark, Check, ChevronRight, Cloud, Download, Grid2X2, Im
 import NextImage from 'next/image';
 import Link from 'next/link';
 import { ProductSlideshow } from '@/components/product-slideshow';
+import { assetPath } from '@/lib/asset-path';
 
 const features = [
   { icon: Grid2X2, title: 'Visual boards', text: 'Keep bookmarks, links and ideas in clean boards you can arrange your way.' },
@@ -33,7 +34,7 @@ export default function Home() {
   return (
     <main>
       <nav className="nav shell" aria-label="Main navigation">
-        <a className="brand" href="#top" aria-label="Veyra home"><NextImage src="/veyra-logo.png" width={38} height={38} alt="" /><span>Veyra</span></a>
+        <a className="brand" href="#top" aria-label="Veyra home"><NextImage src={assetPath('/veyra-logo.png')} width={38} height={38} alt="" /><span>Veyra</span></a>
         <div className="nav-links"><a href="#features">Features</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div>
         <a className="button button-small" href="#pricing">Get Veyra</a>
       </nav>
@@ -48,11 +49,11 @@ export default function Home() {
         <div className="browser-row" aria-label="Veyra works with Chrome, Yandex Browser, Microsoft Edge, Opera, Brave and more Chromium browsers">
           <span>Works with</span>
           <div className="browser-icons">
-            <NextImage src="/browsers/chrome.png" width={38} height={38} alt="Google Chrome" title="Google Chrome" />
-            <NextImage src="/browsers/yandex.png" width={38} height={38} alt="Yandex Browser" title="Yandex Browser" />
-            <NextImage src="/browsers/microsoft.png" width={38} height={38} alt="Microsoft Edge" title="Microsoft Edge" />
-            <NextImage src="/browsers/opera.png" width={38} height={38} alt="Opera" title="Opera" />
-            <NextImage src="/browsers/brave.png" width={38} height={38} alt="Brave" title="Brave" />
+            <NextImage src={assetPath('/browsers/chrome.png')} width={38} height={38} alt="Google Chrome" title="Google Chrome" />
+            <NextImage src={assetPath('/browsers/yandex.png')} width={38} height={38} alt="Yandex Browser" title="Yandex Browser" />
+            <NextImage src={assetPath('/browsers/microsoft.png')} width={38} height={38} alt="Microsoft Edge" title="Microsoft Edge" />
+            <NextImage src={assetPath('/browsers/opera.png')} width={38} height={38} alt="Opera" title="Opera" />
+            <NextImage src={assetPath('/browsers/brave.png')} width={38} height={38} alt="Brave" title="Brave" />
           </div>
           <b>+ more</b>
         </div>

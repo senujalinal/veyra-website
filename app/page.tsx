@@ -2,6 +2,7 @@ import { ArrowRight, Bookmark, Check, ChevronRight, Cloud, Download, Grid2X2, Im
 import NextImage from 'next/image';
 import Link from 'next/link';
 import { ProductSlideshow } from '@/components/product-slideshow';
+import { ScrollPurchaseCta } from '@/components/scroll-purchase-cta';
 import { assetPath } from '@/lib/asset-path';
 
 const features = [
@@ -36,14 +37,14 @@ export default function Home() {
       <nav className="nav shell" aria-label="Main navigation">
         <a className="brand" href="#top" aria-label="Veyra home"><NextImage src={assetPath('/veyra-logo.png')} width={38} height={38} alt="" /><span>Veyra</span></a>
         <div className="nav-links"><a href="#features">Features</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div>
-        <a className="button button-small" href="#pricing">Get Veyra</a>
+        <a className="button button-small nav-buy" href="#pricing">Get Veyra</a>
       </nav>
 
       <section className="hero shell" id="top">
         <div className="eyebrow"><span className="status-dot" /> Browser extension</div>
         <h1>Your new tab,<br /><span>beautifully focused.</span></h1>
         <p className="hero-copy">Bring your bookmarks, tools, notes and daily focus into one calm, personal workspace—ready every time you open a tab.</p>
-        <div className="hero-actions"><a className="button" href="#pricing">Get Veyra <ArrowRight size={17} /></a><a className="text-link" href="#features">See what’s inside</a></div>
+        <div className="hero-actions"><a className="button" id="hero-buy" href="#pricing">Get Veyra <ArrowRight size={17} /></a><a className="text-link" href="#features">See what’s inside</a></div>
         <div className="social-proof"><div className="avatars" aria-hidden="true"><span>AJ</span><span>ML</span><span>SK</span><span>+</span></div><p><strong>800+ people</strong> already use Veyra</p></div>
         <ProductSlideshow />
         <div className="browser-row" aria-label="Veyra works with Chrome, Yandex Browser, Microsoft Edge, Opera, Brave and more Chromium browsers">
@@ -101,6 +102,7 @@ export default function Home() {
 
       <section className="final-cta"><div className="orb orb-one" /><div className="orb orb-two" /><div className="shell"><Bookmark size={28} /><h2>Turn your new tab<br />into a workspace.</h2><p>Buy once and get instant access. Keep it for a year at $12.80, or forever for a one-time $22.80.</p><div className="final-actions"><a className="button" href="mailto:veyrasoft@gmail.com?subject=Veyra%20Lifetime%20Access">Get lifetime for $22.80</a><a className="button secondary-button" href="mailto:veyrasoft@gmail.com?subject=Veyra%201-Year%20Pass">Get 1 year for $12.80</a></div><span className="final-guarantee">7-day money-back guarantee</span></div></section>
 
+      <ScrollPurchaseCta />
       <footer><div className="shell footer-inline"><span>© 2026 Veyrasoft. All rights reserved.</span><div className="footer-links"><Link href="/privacy">Privacy Policy</Link><Link href="/terms">Terms of Service</Link><Link href="/cookies">Cookies</Link><Link href="/refunds">Refunds</Link><Link href="/license">Licence</Link><Link href="/support">Support</Link><a href="mailto:veyrasoft@gmail.com">veyrasoft@gmail.com</a></div></div></footer>
     </main>
   );

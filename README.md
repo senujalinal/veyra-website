@@ -25,4 +25,4 @@ npm install
 npm run dev
 ```
 
-Before accepting payments, connect the pricing buttons to the real checkout URLs and have the legal pages reviewed for the final business and payment setup.
+The pricing buttons use the production Lemon Squeezy checkout URLs. Keep the website, checkout variants, and legal pages aligned whenever prices or payment terms change.
